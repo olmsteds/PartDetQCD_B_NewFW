@@ -22,7 +22,7 @@ ApplyGenWeight  true
 
 /// ------ Data-specific cuts ------///
 FilterDataByGoldenJSON true
-ApplyHEMVeto2018 false
+ApplyHEMVeto2018 true
 
 /// ------ MC Gen-level cuts ------///
 /// --- HT filter --- ///
@@ -36,9 +36,9 @@ GenDilepMassRange 80.0 100.0
 
 /// ------ Triggers ----- ///
 
-Trigger1FirstRequirement HLT_IsoMu24
-Trigger1SecondRequirement HLT_IsoMu27
-UseTriggerWildcard false
+Trigger1FirstRequirement HLT_DoubleMediumIsoPFTau
+Trigger1SecondRequirement HLT_DoubleMediumCombinedIsoPFTau
+UseTriggerWildcard true
 
 /// Trigger2FirstRequirement HLT_DoubleMediumIsoPFTau35_Trk1_eta2p1_Reg
 /// Trigger2SecondRequirement HLT_DoubleMediumIsoPFTau40_Trk1_eta2p1_Reg
@@ -62,7 +62,8 @@ HtCut 30.0
 
 JetPtForMhtAndHt 30.0        
 JetEtaForMhtAndHt 5.0        
-ApplyJetLooseIDforMhtAndHt true
+ApplyJetLooseIDforMhtAndHt false
+ApplyJetTightIDforMhtAndHt true
 
 /// --- MC selection --- ///
 InitializeMCSelection false
