@@ -3,8 +3,8 @@
 ####################################
 
 CalculatePUSystematics true
-DataHistos PileUpReweighting2016.root
-MCHistos mc2016_pileup_Dec2018reReco.root
+DataHistos PileUpReweighting2018.root
+MCHistos mc2018_pileup_Dec2018reReco.root
 DataPUHistName pileup
 MCPUHistName pileup
 
